@@ -1,0 +1,372 @@
+{
+    "ANI": {
+        "Grupa1": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "08:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "08:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "08:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "08:00": "Statistica - Andrei - Sala 1"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "10:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "10:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "10:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "10:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "10:00": "Statistica - Andrei - Sala 1"
+                }
+            }
+        },
+        "Grupa2": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "08:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "08:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "08:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "08:00": "Statistica - Smaranda - Sala 2"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "10:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "10:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "10:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "10:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "10:00": "Statistica - Smaranda - Sala 2"
+                }
+            }
+        }
+    },
+    "ANII": {
+        "Grupa1": {
+            "Subgrupa1": {
+                "Luni": {
+                    "12:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "12:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "12:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "12:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "12:00": "Statistica - Andrei - Sala 1"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "14:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "14:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "14:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "14:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "14:00": "Statistica - Andrei - Sala 1"
+                }
+            }
+        },
+        "Grupa2": {
+            "Subgrupa1": {
+                "Luni": {
+                    "12:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "12:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "12:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "12:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "12:00": "Statistica - Smaranda - Sala 2"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "14:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "14:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "14:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "14:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "14:00": "Statistica - Smaranda - Sala 2"
+                }
+            }
+        }
+    },
+    "ANIII":{
+        "Grupa1": {
+            "Subgrupa1": {
+                "Luni": {
+                    "16:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "16:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "16:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "16:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "16:00": "Statistica - Andrei - Sala 1"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "18:00": "Mate - Paul - Sala 1"
+                },
+                "Marti": {
+                    "18:00": "Statistica - Andrei - Sala 1"
+                },
+                "Miercuri": {
+                    "18:00": "Informatica - Iulian - Sala 1"
+                },
+                "Joi": {
+                    "18:00": "Mate - Paul - Sala 1"
+                },
+                "Vineri": {
+                    "18:00": "Statistica - Andrei - Sala 1"
+                }
+            }
+        },
+        "Grupa2": {
+            "Subgrupa1": {
+                "Luni": {
+                    "12:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "12:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "12:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "12:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "12:00": "Statistica - Smaranda - Sala 2"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "14:00": "Mate - Dinu - Sala 2"
+                },
+                "Marti": {
+                    "14:00": "Statistica - Smaranda - Sala 2"
+                },
+                "Miercuri": {
+                    "14:00": "Informatica - Voinea - Sala 2"
+                },
+                "Joi": {
+                    "14:00": "Mate - Dinu - Sala 2"
+                },
+                "Vineri": {
+                    "14:00": "Statistica - Smaranda - Sala 2"
+                }
+            }
+        }
+    },
+    "ANIMaster": {
+        "Grupa1": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "AI - Stoean - Sala 4"
+                },
+                "Marti": {
+                    "08:00": "AI - Stoean - Sala 4"
+                },
+                "Miercuri": {
+                    "08:00": "AI - Stoean - Sala 4"
+                },
+                "Joi": {
+                    "08:00": "AI - Stoean - Sala 4"
+                },
+                "Vineri": {
+                    "08:00": "AI - Stoean - Sala 4"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "12:00": "AI - Stoean - Sala 3"
+                },
+                "Marti": {
+                    "12:00": "AI - Stoean - Sala 3"
+                },
+                "Miercuri": {
+                    "12:00": "AI - Stoean - Sala 3"
+                },
+                "Joi": {
+                    "12:00": "AI - Stoean - Sala 3"
+                },
+                "Vineri": {
+                    "12:00": "AI - Stoean - Sala 3"
+                }
+            }
+        },
+        "Grupa2": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "AI - Marcel - Sala 4"
+                },
+                "Marti": {
+                    "08:00": "AI - Marcel - Sala 4"
+                },
+                "Miercuri": {
+                    "08:00": "AI - Marcel - Sala 4"
+                },
+                "Joi": {
+                    "08:00": "AI - Marcel - Sala 4"
+                },
+                "Vineri": {
+                    "08:00": "AI - Marcel - Sala 4"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "12:00": "AI - Marcel - Sala 4"
+                },
+                "Marti": {
+                    "12:00": "AI - Marcel - Sala 4"
+                },
+                "Miercuri": {
+                    "12:00": "AI - Marcel - Sala 4"
+                },
+                "Joi": {
+                    "12:00": "AI - Marcel - Sala 4"
+                },
+                "Vineri": {
+                    "12:00": "AI - Marcel - Sala 4"
+                }
+            }
+        }
+    },
+    "ANIIMaster": {
+        "Grupa1": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "Robotica - Marin - Sala 5"
+                },
+                "Marti": {
+                    "08:00": "Robotica - Marin - Sala 5"
+                },
+                "Miercuri": {
+                    "08:00": "Robotica - Marin - Sala 5"
+                },
+                "Joi": {
+                    "08:00": "Robotica - Marin - Sala 5"
+                },
+                "Vineri": {
+                    "08:00": "Robotica - Marin - Sala 5"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "12:00": "Robotica - Marin - Sala 5"
+                },
+                "Marti": {
+                    "12:00": "Robotica - Marin - Sala 5"
+                },
+                "Miercuri": {
+                    "12:00": "Robotica - Marin - Sala 5"
+                },
+                "Joi": {
+                    "12:00": "Robotica - Marin - Sala 5"
+                },
+                "Vineri": {
+                    "12:00": "Robotica - Marin - Sala 5"
+                }
+            }
+        },
+        "Grupa2": {
+            "Subgrupa1": {
+                "Luni": {
+                    "08:00": "AI - Marcel - Sala 6"
+                },
+                "Marti": {
+                    "08:00": "AI - Marcel - Sala 6"
+                },
+                "Miercuri": {
+                    "08:00": "AI - Marcel - Sala 6"
+                },
+                "Joi": {
+                    "08:00": "AI - Marcel - Sala 6"
+                },
+                "Vineri": {
+                    "08:00": "AI - Marcel - Sala 6"
+                }
+            },
+            "Subgrupa2": {
+                "Luni": {
+                    "12:00": "AI - Marcel - Sala 6"
+                },
+                "Marti": {
+                    "12:00": "AI - Marcel - Sala 6"
+                },
+                "Miercuri": {
+                    "12:00": "AI - Marcel - Sala 6"
+                },
+                "Joi": {
+                    "12:00": "AI - Marcel - Sala 6"
+                },
+                "Vineri": {
+                    "12:00": "AI - Marcel - Sala 6"
+                }
+            }
+        }
+    }
+}
