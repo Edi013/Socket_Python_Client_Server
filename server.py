@@ -2,20 +2,20 @@ import json
 import socket
 
 # Load data from json file
-with open("scheduale", "r") as jsonFile:
+with open("data.json", "r") as jsonFile:
     data = json.load(jsonFile)
 
 # Create a socket object
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+used_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to a specific address and port
-s.bind(("localhost", 12121))
+used_socket.bind(("localhost", 12121))
 
 # Listen for incoming connections
-s.listen(5)
+used_socket.listen(5)
 
 # Establish a connection with the client
-client, client_addres = s.accept()
+client, client_addres = used_socket.accept()
 print(f"Got connection from {client_addres}")
 
 while True:
@@ -25,23 +25,21 @@ while True:
 
         # Lookup the data in the json file
         result = data
-        for part in request:
-            existsInJson = result.get(part, False)
+        for identifier in request:
+            existsInJson = result.get(identifier, False)
             if existsInJson == False:
                 raise ValueError
-                break
-            result = result[part]
+            result = result[identifier]
 
         # Send data back to cliend
-        c.send(json.dumps(result).encode())
-
+        client.send(json.dumps(result).encode())
     except ValueError:
         result = f"A value does not exits in the scheduale!"
-        c.send(result.encode())
+        client.send(result.encode())
     except BaseException:
         result = "Exception occured"
-        c.send(result.encode())
+        client.send(result.encode())
 
 # Close the connection with the client
-c.close()
-s.close()
+client.close()
+used_socket.close()

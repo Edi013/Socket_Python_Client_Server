@@ -33,10 +33,12 @@ while(stillRunning):
 
     # Everything is good, let's deserialize given json formatted stirng
     deserializedResponse = json.loads(response)
+
     # Print the response
     for day, schedule in deserializedResponse.items():
         for hour, class_info in schedule.items():
             print(f"{day} - {hour} : {class_info} : {schedule}")
+
     # Ask for next operation
     while(True):
         userInput = input("Do you need any more help ? Y/N\n")
