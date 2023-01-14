@@ -4,84 +4,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "10:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "10:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "10:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "10:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "10:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             }
@@ -90,84 +90,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "10:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "10:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "10:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "10:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "10:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             }
@@ -178,84 +178,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "14:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             }
@@ -264,84 +264,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "14:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             }
@@ -352,84 +352,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "16:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "16:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "16:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "16:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "16:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "18:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Marti": {
                     "18:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 },
                 "Miercuri": {
                     "18:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Iulian",
-                            "S_": "31"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Iulian",
+                            "S": "31"
                     }
                 },
                 "Joi": {
                     "18:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Paul",
-                            "S_": "21"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Paul",
+                            "S": "21"
                     }
                 },
                 "Vineri": {
                     "18:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Andrei",
-                            "S_": "1"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Andrei",
+                            "S": "1"
                     }
                 }
             }
@@ -438,84 +438,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Marti": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 },
                 "Miercuri": {
                     "14:00": {
-                            "DM_" : "Informatica",
-                            "TM_": "L",
-                            "P_": "Voinea",
-                            "S_": "16"
+                            "DM" : "Informatica",
+                            "TM": "L",
+                            "P": "Voinea",
+                            "S": "16"
                     }
                 },
                 "Joi": {
                     "14:00": {
-                            "DM_" : "Mate",
-                            "TM_": "L",
-                            "P_": "Dinu",
-                            "S_": "12"
+                            "DM" : "Mate",
+                            "TM": "L",
+                            "P": "Dinu",
+                            "S": "12"
                     }
                 },
                 "Vineri": {
                     "14:00": {
-                            "DM_" : "Statistica",
-                            "TM_": "L",
-                            "P_": "Smaranda",
-                            "S_": "2"
+                            "DM" : "Statistica",
+                            "TM": "L",
+                            "P": "Smaranda",
+                            "S": "2"
                     }
                 }
             }
@@ -526,84 +526,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Stoean",
-                            "S_": "7"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Stoean",
+                            "S": "7"
                     }
                 }
             }
@@ -612,84 +612,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "4"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "4"
                     }
                 }
             }
@@ -700,84 +700,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "Robotica",
-                            "TM_": "S",
-                            "P_": "Marin",
-                            "S_": "5"
+                            "DM" : "Robotica",
+                            "TM": "S",
+                            "P": "Marin",
+                            "S": "5"
                     }
                 }
             }
@@ -786,84 +786,84 @@
             "Subgrupa1": {
                 "Luni": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Marti": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Miercuri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Joi": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Vineri": {
                     "08:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 }
             },
             "Subgrupa2": {
                 "Luni": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Marti": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Miercuri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Joi": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 },
                 "Vineri": {
                     "12:00": {
-                            "DM_" : "AI",
-                            "TM_": "S",
-                            "P_": "Marcel",
-                            "S_": "6"
+                            "DM" : "AI",
+                            "TM": "S",
+                            "P": "Marcel",
+                            "S": "6"
                     }
                 }
             }
