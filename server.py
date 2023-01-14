@@ -2,6 +2,8 @@ import json
 import socket
 
 # Load data from json file
+from config import Config
+
 with open("data.json", "r") as jsonFile:
     data = json.load(jsonFile)
 
@@ -18,27 +20,58 @@ used_socket.listen(5)
 client, client_addres = used_socket.accept()
 print(f"Got connection from {client_addres}")
 
+requestMessage = "Enter a request.\ne.g:ANI/Grupa1/Subgrupa1\n"
+
 while True:
-    try:
-        # Read data from the client
-        request = client.recv(1024).decode().split("/")
+    #1 Serverul asteapta comanda START
+    while True:
+        request = client.recv(1024).decode()
+        if request.upper() == "START":
+            #2 Serverul raspunde ca este pregatit de dialog
+            client.send(requestMessage.encode())
+            break
 
-        # Lookup the data in the json file
-        result = data
-        for identifier in request:
-            existsInJson = result.get(identifier, False)
-            if existsInJson == False:
-                raise ValueError
-            result = result[identifier]
+    # 3 Serverul asteapta interogare corect formulata despre orar
+    while True:
+        try:
+            # Read data from the client
+            request = client.recv(1024).decode().split("/")
 
-        # Send data back to cliend
-        client.send(json.dumps(result).encode())
-    except ValueError:
-        result = f"A value does not exits in the scheduale!"
-        client.send(result.encode())
-    except BaseException:
-        result = "Exception occured"
-        client.send(result.encode())
+        #Primul request An/Grupa/Subgrupa
+    # 4 Serverul verifica validitatea requestului
+
+            # Manage the request
+            if (len(request) > 3):
+                raise IndexError
+
+            result = data
+            kth = 0
+            for identifier in request:
+                existsInJson = result.get(identifier, False)
+                if existsInJson == False:
+                    if kth == 0:
+                        errorMessage = Config.badRequestIndex0
+                    if kth == 1:
+                        errorMessage = Config.badRequestIndex1
+                    if kth == 2:
+                        errorMessage = Config.badRequestIndex2
+                    raise ValueError
+                result = result[identifier]
+                kth+=1
+
+            # Send to client that data was found, ask for day, send back all hours, ask for hour, send back all options
+            # Send data back to client
+            client.send(json.dumps(result).encode())
+
+        except IndexError:
+            result = Config.tooShortLongRequest
+            client.send(result.encode())
+        except ValueError:
+            result = errorMessage
+            client.send(result.encode())
+        except BaseException:
+            result = Config.unhandeledExceptionOccured
+            client.send(result.encode())
 
 # Close the connection with the client
 client.close()
