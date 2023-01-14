@@ -9,7 +9,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Connect to the server
 s.connect(("localhost", 12121))
 
-requestMessage = "Enter a request.\ne.g:ANI/Grupa1/Subgrupa1\n"
+
 #1 Conditie necesara pentru comanda START
 while(True):
     userSaysStart = input("1.START\n2.STOP\n")
@@ -22,7 +22,7 @@ while(True):
 
 #2 Serverul raspunde clientului ca asteapta socilitarea de tipul e.g.
     serverResponse = s.recv(1024).decode()
-    if serverResponse != requestMessage:
+    if serverResponse != Config.request1Message:
         print("ERROR. Server response = " + serverResponse)
         continue
 
@@ -30,40 +30,56 @@ while(True):
     stillRunning = True
     while(stillRunning):
         # Send a request to the server
-        request = input(requestMessage)
+        request = input(Config.request1Message)
         s.send(request.encode())
 
-        # Receive data from the server
+        # Receive request status from the server
         response = s.recv(1024).decode()
 
         if isinstance(response, str):
-            # O exceptie care nu e gestionata explicit
-            if response == Config.unhandeledExceptionOccured:
-                print(Config.unhandeledExceptionOccured)
+
             # Input prea scurt / lung
             if response ==  Config.tooShortLongRequest:
                 print(Config.tooShortLongRequest)
+                print(Config.tryAgain)
                 continue
             # Request scris gresit
             if response == Config.badRequestIndex0:
                 print(Config.badRequestIndex0)
+                print(Config.tryAgain)
+                continue
             if response == Config.badRequestIndex1:
                 print(Config.badRequestIndex1)
+                print(Config.tryAgain)
+                continue
             if response == Config.badRequestIndex2:
                 print(Config.badRequestIndex2)
+                print(Config.tryAgain)
+                continue
+            # O exceptie care nu e gestionata explicit
+            if response == Config.unhandeledExceptionOccured:
+                print(Config.unhandeledExceptionOccured)
+                print(Config.tryAgain)
+                continue
+            # 2nd Request is send
+            if response == Config.requestProcessed:
+                request = input(Config.request2Message)
+                s.send(request.encode())
 
-            print(Config.tryAgain)
-            continue
+        # daca avem un request specific, atunci o sa primim 2 informatii de la server: arr de ore si detaliile despre orar
+        if len(request.split("/")) > 1:
+            response = s.recv(1024).decode()
+            hours = response
+            response = s.recv(1024).decode()
+            deserializedResponse = json.loads(response)
+            for hour in hours:
+                print(hour)
+                for valueName in deserializedResponse:
+                    print("valName " + valueName +", val"+deserializedResponse[valueName])
+        else:
+            response = s.recv(1024).decode()
+            deserializedResponse = json.loads(response)
 
-
-
-        # Everything is good, let's deserialize given json formatted stirng
-        deserializedResponse = json.loads(response)
-
-        # Print the response
-        for day, schedule in deserializedResponse.items():
-            for hour, class_info in schedule.items():
-                print(f"{day} - {hour} : {class_info} : {schedule}")
 
         # Ask for next operation
         while(True):
@@ -77,14 +93,5 @@ while(True):
             else:
                 print("Bad input!")
 
-
-
 # Close the connection
 s.close()
-
-
-
-
-
-#modific tot json ul
-#

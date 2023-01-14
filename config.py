@@ -5,3 +5,7 @@ class Config:
     tryAgain = "Try again!"
     tooShortLongRequest = "The request should have only 3 values as the e.g."
     unhandeledExceptionOccured = "Exception occured"
+    requestProcessed = "Request processed"
+    request1Message = "Enter a request.\ne.g:ANI/Grupa1/Subgrupa1\n"
+    request2Message = "Enter a requst for day and wanted details.\nDays: any week day\nDetails: \n\"DM_\" - Denumire Materie\n \"TM_\" - Tip activitate\n \"P_\" - Denumire Profesor\n \"S_\" - Sala\nIf no detail is provided it will consider all are provided\ne.g.:Luni/DM_/P_\n"
+    dataNotFound = "Inputed data was not found"
