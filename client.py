@@ -14,6 +14,7 @@ socket.connect(("localhost", 12121))
 while(True):
     userSaysStart = input("1.START\n2.STOP\n")
     if userSaysStart.upper() == "STOP":
+        socket.send("STOP".encode())
         break
     if userSaysStart.upper() != "START":
         continue
@@ -61,8 +62,6 @@ while(True):
                 print(Config.unhandeledExceptionOccured)
                 print(Config.tryAgain)
                 continue
-        else:
-            print("Not string instance was returned when expected ...")
 
   # 2nd Request is send
         if response == Config.requestProcessed:

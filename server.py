@@ -30,27 +30,31 @@ used_socket.listen(5)
 client, client_addres = used_socket.accept()
 print(f"Got connection from {client_addres}")
 
-connectionAvailable = False
+connectionAvailable = True
+userWantsToStop = False
 while True:
     #1 Serverul asteapta comanda START
-    while True:
+    while connectionAvailable:
         request = client.recv(1024).decode()
         #connectionAvailable = isConnectionAvailable(request)
-
         if request.upper() == "START":
-            #2 Serverul raspunde ca este pregatit de dialog
-            client.send(Config.request1Message.encode())
             print("One client requested start")
             connectionAvailable = True
             break
+
         if request.upper() == "STOP":
             print("One client requested stop")
             connectionAvailable = False
+            userWantsToStop = True
             break
+    if userWantsToStop == True:
+        break
 
     # 3 Serverul asteapta interogare corect formulata despre orar
     while connectionAvailable:
         try:
+            #2 Serverul raspunde ca este pregatit de dialog
+            client.send(Config.request1Message.encode())
             # Read data from the client
             request = client.recv(1024).decode().split("/")
             connectionAvailable = isConnectionAvailable(request)
@@ -60,7 +64,6 @@ while True:
             # Manage the request
             if (len(request) > 3):
                 raise IndexError
-
             result = data
             kth = 0
             errorMessage = "initializare ca nu ma lasa sa fac nimic fara"
@@ -76,15 +79,13 @@ while True:
                     raise ValueError
                 result = result[identifier]
                 kth+=1
-
-            # Send data back to client
+            # Send status back to client
             client.send(Config.requestProcessed.encode())
 
             # 2nd request is awaited
             #receive req2
             request = client.recv(1024).decode().split("/")
             connectionAvailable = isConnectionAvailable(request)
-
             # Mereu avem argumentul 0, verificam daca e valid
             ok = False
             for day in ["Luni", "Marti", "Miercuri", "Joi", "Vineri"]:
@@ -108,7 +109,8 @@ while True:
             result_save = result = result[request[0]]
 
             # Daca nu a fost folosita nicio optiune / detaliu, se considera a fi dorite toate
-
+            print("vad ca requestul are lungime mai mare de 1")
+            print(request[0])
             if len(request) != 1:
                 toPrint = {}
                 hours = []
@@ -117,12 +119,14 @@ while True:
                    hours.append(hour)
                    aux = result[hour]
                    for value in aux:
-                       if value in request:
-                           toPrint[value] = aux[value]
-                           print(toPrint)
-                           print(type(toPrint))
-                client.send(json.dumps(hours).encode())
-                client.send(json.dumps(toPrint).encode())
+                        print("val")
+                        print(value)
+                      #for good_option in ["DM", "TM", "P", "S"]:
+                         #if value == good_option:
+                            # toPrint[value] = aux[value]
+                            # print("val")
+                            # print(value)
+                            # print(aux[value])
             else:
                 client.send(json.dumps(result_save).encode())
 
@@ -170,7 +174,6 @@ while True:
 print("No client is online")
 print("Shutting down ...")
 # Close the connection with the client
-client.close()
 used_socket.close()
 
 
