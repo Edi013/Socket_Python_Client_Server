@@ -113,6 +113,7 @@ while True:
                 toPrint = {}
                 hours = []
                 for hour in result:
+                   print("o iteratie in hour in result linia 116")
                    hours.append(hour)
                    aux = result[hour]
                    for value in aux:
@@ -124,6 +125,23 @@ while True:
                 client.send(json.dumps(toPrint).encode())
             else:
                 client.send(json.dumps(result_save).encode())
+
+        # Ask for next operation
+            userContinuesOrNot = client.recv(1024).decode()
+            if(not isConnectionAvailable(userContinuesOrNot)):
+                connectionAvailable = False
+                break
+            if userContinuesOrNot == 'Y':
+                connectionAvailable = True
+                print("Y was inputed")
+            elif userContinuesOrNot == 'N':
+                print("N was inputed")
+                connectionAvailable = False
+                break
+            else:
+                connectionAvailable = False
+                print("Unexpected error line 141 server side !")
+                break
 
         except AssertionError:
             result = Config.invalidOptionInput
