@@ -37,10 +37,13 @@ while(True):
         response = s.recv(1024).decode()
 
         if isinstance(response, str):
-
+            if response == Config.invalidDayInput:
+                print(Config.invalidDayInput)
+                print(Config.tryAgain)
+                continue
             # Input prea scurt / lung
-            if response ==  Config.tooShortLongRequest:
-                print(Config.tooShortLongRequest)
+            if response ==  Config.tooLongRequest:
+                print(Config.tooLongRequest)
                 print(Config.tryAgain)
                 continue
             # Request scris gresit
@@ -66,19 +69,23 @@ while(True):
                 request = input(Config.request2Message)
                 s.send(request.encode())
 
-        # daca avem un request specific, atunci o sa primim 2 informatii de la server: arr de ore si detaliile despre orar
+        # daca avem un request specific, atunci o sa primim 2 informatii de la server: 1.Orele(array), 2.Detaliile (jsonDoc serializat)
         if len(request.split("/")) > 1:
             response = s.recv(1024).decode()
-            hours = response
+            hours = json.loads(response)
             response = s.recv(1024).decode()
             deserializedResponse = json.loads(response)
             for hour in hours:
                 print(hour)
                 for valueName in deserializedResponse:
-                    print("valName " + valueName +", val"+deserializedResponse[valueName])
+                    print(valueName +": "+deserializedResponse[valueName])
         else:
             response = s.recv(1024).decode()
             deserializedResponse = json.loads(response)
+            for hour in deserializedResponse:
+                print(hour)
+                for detailName in deserializedResponse[hour]:
+                    print(detailName +": "+ deserializedResponse[hour][detailName])
 
 
         # Ask for next operation

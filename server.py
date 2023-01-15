@@ -7,8 +7,15 @@ import traceback
 from Exceptions import IncorrectInputException
 from config import Config
 
+
 with open("data.json", "r") as jsonFile:
     data = json.load(jsonFile)
+
+def isConnectionAvailable(response):
+    if response == b'':
+        return False
+    return True
+
 
 # Create a socket object
 used_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -23,24 +30,33 @@ used_socket.listen(5)
 client, client_addres = used_socket.accept()
 print(f"Got connection from {client_addres}")
 
+connectionAvailable = False
 while True:
     #1 Serverul asteapta comanda START
     while True:
         request = client.recv(1024).decode()
+        #connectionAvailable = isConnectionAvailable(request)
+
         if request.upper() == "START":
             #2 Serverul raspunde ca este pregatit de dialog
             client.send(Config.request1Message.encode())
+            print("One client requested start")
+            connectionAvailable = True
+            break
+        if request.upper() == "STOP":
+            print("One client requested stop")
+            connectionAvailable = False
             break
 
     # 3 Serverul asteapta interogare corect formulata despre orar
-    while True:
+    while connectionAvailable:
         try:
             # Read data from the client
             request = client.recv(1024).decode().split("/")
+            connectionAvailable = isConnectionAvailable(request)
 
         #Primul request An/Grupa/Subgrupa
     # 4 Serverul verifica validitatea requestului
-
             # Manage the request
             if (len(request) > 3):
                 raise IndexError
@@ -67,12 +83,29 @@ while True:
             # 2nd request is awaited
             #receive req2
             request = client.recv(1024).decode().split("/")
+            connectionAvailable = isConnectionAvailable(request)
 
             # Mereu avem argumentul 0, verificam daca e valid
-            if request[0] not in ["Luni", "Marti", "Miercuri", "Joi", "Vineri"]:
+            ok = False
+            for day in ["Luni", "Marti", "Miercuri", "Joi", "Vineri"]:
+                if request[0] == day:
+                    ok = True
+            if not ok:
                 raise BlockingIOError
 
-            jsonToString = result = result[request[0]]
+            for input_option in request:
+                if input_option == request[0]:
+                    continue
+                ok = False
+                for good_option in ["DM", "TM", "P", "S"]:
+                    if input_option == good_option:
+                        ok = True
+                    if not ok:
+                        raise AssertionError
+
+
+
+            result_save = result = result[request[0]]
 
             # Daca nu a fost folosita nicio optiune / detaliu, se considera a fi dorite toate
 
@@ -85,19 +118,21 @@ while True:
                    for value in aux:
                        if value in request:
                            toPrint[value] = aux[value]
-                           print("val" + value +", aux[value]" + aux[value])
                            print(toPrint)
                            print(type(toPrint))
                 client.send(json.dumps(hours).encode())
                 client.send(json.dumps(toPrint).encode())
             else:
-                client.send(json.dumps(jsonToString).encode())
+                client.send(json.dumps(result_save).encode())
 
+        except AssertionError:
+            result = Config.invalidOptionInput
+            client.send(Config.invalidOptionInput.encode())
         except BlockingIOError:
-            result = Config.dataNotFound
+            result = Config.invalidDayInput
             client.send(result.encode())
         except IndexError:
-            result = Config.tooShortLongRequest
+            result = Config.tooLongRequest
             client.send(result.encode())
         except ValueError as e:
             result = errorMessage
@@ -114,10 +149,11 @@ while True:
             stack_trace = traceback.format_exc()
             print(stack_trace)
 
-
-
+print("No client is online")
+print("Shutting down ...")
 # Close the connection with the client
 client.close()
 used_socket.close()
+
 
 
