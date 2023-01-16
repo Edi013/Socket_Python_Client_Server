@@ -29,6 +29,7 @@ while(True):
 #3 Studentul introduce requestul
     stillRunning = True
     while(stillRunning):
+        #noErrorOccured = True
         # Send a request to the server
         request = input(Config.request1Message)
         socket.send(request.encode())
@@ -38,29 +39,35 @@ while(True):
             if response == Config.invalidDayInput:
                 print(Config.invalidDayInput)
                 print(Config.tryAgain)
+                #noErrorOccured = False
                 continue
             # Input prea scurt / lung
             if response ==  Config.tooLongRequest:
                 print(Config.tooLongRequest)
                 print(Config.tryAgain)
+                #noErrorOccured = False
                 continue
             # Request scris gresit
             if response == Config.badRequestIndex0:
                 print(Config.badRequestIndex0)
                 print(Config.tryAgain)
+               # noErrorOccured = False
                 continue
             if response == Config.badRequestIndex1:
                 print(Config.badRequestIndex1)
                 print(Config.tryAgain)
+                #noErrorOccured = False
                 continue
             if response == Config.badRequestIndex2:
                 print(Config.badRequestIndex2)
                 print(Config.tryAgain)
+                #noErrorOccured = False
                 continue
             # O exceptie care nu e gestionata explicit
             if response == Config.unhandeledExceptionOccured:
                 print(Config.unhandeledExceptionOccured)
                 print(Config.tryAgain)
+                #noErrorOccured = False
                 continue
 
   # 2nd Request is send
@@ -68,9 +75,15 @@ while(True):
             request = input(Config.request2Message)
             socket.send(request.encode())
             request = request.split("/")
+
+            response = socket.recv(1024).decode()
+            if(isinstance(response, str)):
+                print("Response ul este string, dar nu ar trebui")
+                print(response)
+                #noErrorOccured = False
+                continue
         # daca avem un request specific, atunci o sa primim 2 informatii de la server: 1.Orele(array), 2.Detaliile (jsonDoc serializat)
             if len(request) > 1:
-                response = socket.recv(1024).decode()
                 print("hours")
                 print(response)
                 hours = json.loads(response)
@@ -83,27 +96,29 @@ while(True):
                     for valueName in deserializedResponse:
                         print(valueName +": "+deserializedResponse[valueName])
             else:
-                response = socket.recv(1024).decode()
                 deserializedResponse = json.loads(response)
                 for hour in deserializedResponse:
                     print(hour)
                     for detailName in deserializedResponse[hour]:
                         print(detailName +": "+ deserializedResponse[hour][detailName])
 
-
-        # Ask for next operation
-        while(True):
-            userInput = input("Do you need any more help ? Y/N\n")
-            if userInput == 'Y':
-                stillRunning = True
-                socket.send("Y".encode())
-                break
-            elif userInput == 'N':
-                stillRunning = False
-                socket.send("N".encode())
-                break
-            else:
-                print("Bad input!")
+        # if(noErrorOccured):
+        #     # Ask for next operation
+        #     while(True):
+        #         userInput = input("Do you need any more help ? Y/N\n")
+        #         if userInput == 'Y':
+        #             stillRunning = True
+        #             socket.send("Y".encode())
+        #             break
+        #         elif userInput == 'N':
+        #             stillRunning = False
+        #             socket.send("N".encode())
+        #             break
+        #         else:
+        #             print("Bad input!")
+        userInput = input("Do you need any more help ? Y/N\n")
+        if userInput != 'Y':
+            stillRunning = False
 
 # Close the connection
 socket.close()
