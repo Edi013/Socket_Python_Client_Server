@@ -120,32 +120,9 @@ while True:
                     for value in aux:
                         print("val")
                         print(value)
-                    # for good_option in ["DM", "TM", "P", "S"]:
-                    # if value == good_option:
-                    # toPrint[value] = aux[value]
-                    # print("val")
-                    # print(value)
-                    # print(aux[value])
-            else:
+
                 client.send(json.dumps(result_save).encode())
 
-            #if(noErrorOccured)
-            # Ask for next operation
-            # userContinuesOrNot = client.recv(1024).decode()
-            # if (not isConnectionAvailable(userContinuesOrNot)):
-            #     connectionAvailable = False
-            #     break
-            # if userContinuesOrNot == 'Y':
-            #     connectionAvailable = True
-            #     print("Y was inputed")
-            # elif userContinuesOrNot == 'N':
-            #     print("N was inputed")
-            #     connectionAvailable = False
-            #     break
-            # else:
-            #     connectionAvailable = False
-            #     print("Unexpected error line 141 server side !")
-            #     break
 
         except AssertionError:
             result = Config.invalidOptionInput

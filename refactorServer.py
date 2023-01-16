@@ -59,15 +59,26 @@ while True:
                 request = client.recv(1024).decode().split("/")
                 if (len(request) > 3):
                     raise IndexError
+                years = ["ANI", "ANII", "ANIII", "ANIMASTER", "ANIIMASTER"]
+                groups = ["Grupa1", "Grupa2"]
+                subgroups = ["Subgrupa1", "Subgrupa2"]
+                wrong = False
                 for identifier in request:
-                    existsInJson = result.get(identifier, False)
-                    if not existsInJson:
-                        if kth == 0:
+                    #existsInJson = result.get(identifier, False)
+                    #if not existsInJson:
+                    if kth == 0:
+                        if identifier not in years:
                             errorMessage = Config.badRequestIndex0
-                        if kth == 1:
+                            wrong = True
+                    if kth == 1:
+                        if identifier not in groups:
                             errorMessage = Config.badRequestIndex1
-                        if kth == 2:
+                            wrong = True
+                    if kth == 2:
+                        if identifier not in subgroups:
                             errorMessage = Config.badRequestIndex2
+                            wrong = True
+                    if wrong:
                         raise ValueError(errorMessage)
                     # noinspection PyTypeChecker
                     result = result[identifier]
@@ -79,12 +90,12 @@ while True:
                 result = Config.tooLongRequest
                 client.send(result.encode())
                 print(e)
-                continue
+
             except ValueError as e:
                 result = str(e)
                 client.send(result.encode())
                 print(e)
-                continue
+
         if requestProcessedSent:
             break
 
@@ -142,12 +153,15 @@ while True:
         detailsToSend = {}
         for hour in result:
             hours.append(hour)
+            print("hour")
             print(hour)
     # noinspection PyTypeChecker
             details = result[hour]
             for detail in details:
                 if detail in request:
+                    print("option")
                     print(detail)
+                    print("option value")
                         # noinspection PyTypeChecker
                     print(details[detail])
                                         # noinspection PyTypeChecker

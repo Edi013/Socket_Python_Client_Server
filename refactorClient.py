@@ -53,7 +53,7 @@ while True:
             serverResponse = socket.recv(1024).decode()
 
             # Input prea scurt / lung
-            if serverResponse ==  Config.tooLongRequest:
+            if serverResponse == Config.tooLongRequest:
                 print(Config.tooLongRequest)
                 print(Config.tryAgain)
                 continue
@@ -75,7 +75,7 @@ while True:
                 break
         if requestProcessedSent:
             break
-    if(errorOccured):
+    if errorOccured:
         break
 
     requestHaveOptions = False
