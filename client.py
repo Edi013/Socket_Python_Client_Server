@@ -67,8 +67,9 @@ while(True):
         if response == Config.requestProcessed:
             request = input(Config.request2Message)
             socket.send(request.encode())
+            request = request.split("/")
         # daca avem un request specific, atunci o sa primim 2 informatii de la server: 1.Orele(array), 2.Detaliile (jsonDoc serializat)
-            if len(request.split("/")) > 1:
+            if len(request) > 1:
                 response = socket.recv(1024).decode()
                 print("hours")
                 print(response)
